@@ -11,7 +11,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<style>
 			.jumbotron { 
-				background-color: #337ab7; /* Orange */
+				background-color: #337ab7; 
 				color: #ffffff;
 				margin-bottom: 5px;
 			}
@@ -21,6 +21,17 @@
 			table {
 				font-size: 10px;
 			}
+			.navbar {
+				margin-bottom: 5px;
+			}
+			.navbar-toggle {
+				float: inherit;
+				padding: 5px 10px;
+				margin-right: 10px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -28,35 +39,43 @@
 			<h1>Money</h1> 
 			<p>We take care of it</p> 
 		</div>
-		<div class="container">
-			<ul class="nav nav-pills nav-fill">
-				<li class="active"><a data-toggle="pill" href="#home">Despesas</a></li>
-				<li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-				<li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-				<li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
-			</ul>
-		</div>
-		
-	<div class="tab-content">
-		<div id="home" class="container tab-pane fade in active">
-			<h3>Despesas</h3>
-			<table class="table text-centered">
-				<thead>
-					<tr class="text-centered">
-						<th>Data</th>
-						<th>Local</th>
-						<th>Descrição</th>
-						<th>Valor</th>
-						<th>Forma de Pagamento</th>
-					</tr>
-				</thead>
-				<tbody>
-					  <tr>
-						<td>03/07/1982</td>
-						<td>Feira da Fruta</td>
-						<td>Alimentação</td>
-						<td>R$10,00</td>
-						<td>Dinheiro</td>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="glyphicon glyphicon-list"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+						<li><a data-toggle="pill" href="#menu1">Page 1</a></li>
+						<li><a data-toggle="pill" href="#menu2">Page 2</a></li> 
+						<li><a data-toggle="pill" href="#menu3">Page 3</a></li> 
+					</ul>
+				</div>
+			</div>
+		</nav>	
+		<div class="tab-content">
+			<div id="home" class="container tab-pane fade in active">
+				<h3>Despesas</h3>
+				<table class="table text-centered">
+					<thead>
+						<tr class="text-centered">
+							<th>Data</th>
+							<th>Local</th>
+							<th>Descrição</th>
+							<th>Valor</th>
+							<th>Forma de Pagamento</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>03/07/1982</td>
+							<td>Feira da Fruta</td>
+							<td>Alimentação</td>
+							<td>R$10,00</td>
+							<td>Dinheiro</td>
 					  </tr>
 					  <tr>
 						<td>09/09/1986</td>
@@ -89,4 +108,11 @@
 		</div>
 	</div>
 	</body>
+	<script>
+	$(document).ready(function() {
+		$("a").click(function() {
+			//$("#myNavbar").removeClass("in");
+		});
+	});
+	</script>
 </html>
