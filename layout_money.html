@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style>
+			.jumbotron { 
+				background-color: #337ab7; /* Orange */
+				color: #ffffff;
+				margin-bottom: 5px;
+			}
+			.text-centered {
+				text-align: center;
+			}
+			table {
+				font-size: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h1>Money</h1> 
+			<p>We take care of it</p> 
+		</div>
+		<div class="container">
+			<ul class="nav nav-pills">
+				<li class="active"><a data-toggle="pill" href="#home">Despesas</a></li>
+				<li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+				<li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+				<li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+			</ul>
+		</div>
+		
+	<div class="tab-content">
+		<div id="home" class="container tab-pane fade in active">
+			<h3>Despesas</h3>
+			<table class="table text-centered">
+				<thead>
+					<tr class="text-centered">
+						<th>Data</th>
+						<th>Local</th>
+						<th>Descrição</th>
+						<th>Valor</th>
+						<th>Forma de Pagamento</th>
+					</tr>
+				</thead>
+				<tbody>
+					  <tr>
+						<td>03/07/1982</td>
+						<td>Feira da Fruta</td>
+						<td>Alimentação</td>
+						<td>R$10,00</td>
+						<td>Dinheiro</td>
+					  </tr>
+					  <tr>
+						<td>09/09/1986</td>
+						<td>Shopping Boulevard</td>
+						<td>Carro</td>
+						<td>R$12,00</td>
+						<td>Cartão de Crédito</td>
+					  </tr>
+					  <tr>
+						<td>05/10/1987</td>
+						<td>Pacheco</td>
+						<td>Farmácia</td>
+						<td>R$110,00</td>
+						<td>INTER</td>
+					  </tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="menu1" class="container tab-pane fade">
+		  <h3>Menu 1</h3>
+		  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div id="menu2" class="container tab-pane fade">
+		  <h3>Menu 2</h3>
+		  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+		<div id="menu3" class="container tab-pane fade">
+		  <h3>Menu 3</h3>
+		  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		</div>
+	</div>
+	</body>
+</html>
